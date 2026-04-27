@@ -8,13 +8,13 @@ jobs:
     name: build de l'application
     runs-on: ubuntu-latest
     steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
       - name: Configuration Python 3.11.9
-        uses: ./
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.11.9
+          python-version: "3.11.9"
       - name: Installation des dépendances
-        run: npm ci
-      - name: build de l'application
-        run: npm run build
+        run: pip install -r requirements.txt
       - name: test
-        run: npm run test
+        run: python test_app_satisfaction.py
