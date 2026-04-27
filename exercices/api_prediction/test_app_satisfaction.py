@@ -2,7 +2,7 @@ import pytest
 import json
 import numpy as np
 from unittest.mock import Mock, patch
-from exercices.api_prediction.app_satisfaction import app, prediction_history
+from app_satisfaction import app, prediction_history
 
 
 @pytest.fixture
