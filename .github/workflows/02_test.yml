@@ -1,0 +1,20 @@
+# Nom pour le workflow
+name: Troisième workflow
+on: 
+  - push
+  - pull_request
+jobs:
+  premier-job:
+    name: build de l'application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configuration Python 3.11.9
+        uses: ./
+        with:
+          python-version: 3.11.9
+      - name: Installation des dépendances
+        run: npm ci
+      - name: build de l'application
+        run: npm run build
+      - name: test
+        run: npm run test
