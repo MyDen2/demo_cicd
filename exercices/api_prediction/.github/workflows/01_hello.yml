@@ -1,5 +1,5 @@
 # Nom pour le workflow
-name: Premier workflow
+name: Deuxième workflow
 # On précise quel est le déclencheur de notre worflow
 on: push
 # On pércise les actions à réaliser lors du déclenchement de ce workflow
