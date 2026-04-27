@@ -17,4 +17,4 @@ jobs:
       - name: Affiche date du déclenchement
         run: date
       - name: Affiche heure du déclenchement
-        run: echo "Goodbye" 
+        run: hour 
