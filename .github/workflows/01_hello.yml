@@ -14,7 +14,5 @@ jobs:
     # On donne un nom à notre étape & une commande
       - name: Dit Bienvenue
         run: echo "Bienvenue dans la CI/CD pour l'API de satisfaction !"
-      - name: Affiche date du déclenchement
+      - name: Affiche date et heure du déclenchement
         run: date
-      - name: Affiche heure du déclenchement
-        run: hour 
