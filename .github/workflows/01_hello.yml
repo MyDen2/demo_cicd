@@ -15,6 +15,6 @@ jobs:
       - name: Dit Bienvenue
         run: echo "Bienvenue dans la CI/CD pour l'API de satisfaction !"
       - name: Affiche date du déclenchement
-        run: echo "Goodbye" 
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Affiche heure du déclenchement
         run: echo "Goodbye" 
